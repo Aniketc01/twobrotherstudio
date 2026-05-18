@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "A luxury creative studio crafting cinematic design, content and development for modern brands." },
       { name: "author", content: "2BrotherStudio" },
       { property: "og:title", content: "2BrotherStudio — Premium Digital Experiences" },
-      { property: "og:description", content: "Design. Content. Development. Premium digital experiences for modern brands." },
+      { property: "og:description", content: "A luxury creative studio crafting cinematic design, content and development for modern brands." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "2BrotherStudio — Premium Digital Experiences" },
+      { name: "twitter:description", content: "A luxury creative studio crafting cinematic design, content and development for modern brands." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/84384e90-2792-40cf-8d17-b79ed83fa625/id-preview-7af6d399--b45fd985-c71e-4cf8-a971-ccb6034e6583.lovable.app-1779124580525.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/84384e90-2792-40cf-8d17-b79ed83fa625/id-preview-7af6d399--b45fd985-c71e-4cf8-a971-ccb6034e6583.lovable.app-1779124580525.png" },
     ],
     links: [
       {
