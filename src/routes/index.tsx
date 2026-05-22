@@ -11,6 +11,7 @@ import { CTA } from "@/components/site/CTA";
 import { InquiryForm } from "@/components/site/InquiryForm";
 import { Footer } from "@/components/site/Footer";
 import { Cursor } from "@/components/site/Cursor";
+import { PreloaderGate } from "@/components/site/Preloader";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -18,19 +19,21 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="relative min-h-screen bg-background text-foreground">
-      <Cursor />
-      <Nav />
-      <Hero />
-      <Marquee />
-      <Services />
-      <Work />
-      <About />
-      <Process />
-      <Testimonials />
-      <CTA />
-      <InquiryForm />
-      <Footer />
-    </main>
+    <PreloaderGate>
+      <main className="relative min-h-screen bg-background text-foreground">
+        <Cursor />
+        <Nav />
+        <Hero />
+        <Marquee />
+        <Services />
+        <Work />
+        <About />
+        <Process />
+        <Testimonials />
+        <CTA />
+        <InquiryForm />
+        <Footer />
+      </main>
+    </PreloaderGate>
   );
 }
