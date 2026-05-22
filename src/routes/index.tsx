@@ -8,6 +8,7 @@ import { About } from "@/components/site/About";
 import { Process } from "@/components/site/Process";
 import { Testimonials } from "@/components/site/Testimonials";
 import { CTA } from "@/components/site/CTA";
+import { InquiryForm } from "@/components/site/InquiryForm";
 import { Footer } from "@/components/site/Footer";
 import { Cursor } from "@/components/site/Cursor";
 
@@ -28,6 +29,7 @@ function Index() {
       <Process />
       <Testimonials />
       <CTA />
+      <InquiryForm />
       <Footer />
     </main>
   );
