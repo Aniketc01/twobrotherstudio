@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
   { label: "Work", href: "#work" },
@@ -36,13 +37,16 @@ export function Nav() {
           ))}
         </nav>
 
-        <a
-          href="#contact"
-          className="group relative hidden overflow-hidden rounded-full border border-white/10 bg-surface px-5 py-2 text-xs font-medium uppercase tracking-[0.15em] transition-colors hover:border-accent/40 md:inline-flex"
-        >
-          <span className="relative z-10">Start a project</span>
-          <span className="absolute inset-0 -translate-x-full bg-accent/20 transition-transform duration-500 group-hover:translate-x-0" />
-        </a>
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+          <a
+            href="#contact"
+            className="group relative hidden overflow-hidden rounded-full border border-white/10 bg-surface px-5 py-2 text-xs font-medium uppercase tracking-[0.15em] transition-colors hover:border-accent/40 md:inline-flex"
+          >
+            <span className="relative z-10">Start a project</span>
+            <span className="absolute inset-0 -translate-x-full bg-accent/20 transition-transform duration-500 group-hover:translate-x-0" />
+          </a>
+        </div>
       </div>
     </motion.header>
   );
