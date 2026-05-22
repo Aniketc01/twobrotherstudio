@@ -103,12 +103,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
+  const themeScript = `(() => { try { var s = localStorage.getItem('tbs-theme'); var d = s ? s === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches; var r = document.documentElement; if (d) r.classList.add('dark'); else r.classList.remove('dark'); r.style.colorScheme = d ? 'dark' : 'light'; } catch(e) { document.documentElement.classList.add('dark'); } })();`;
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <HeadContent />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         {children}
         <Scripts />
       </body>
