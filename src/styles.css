@@ -49,9 +49,9 @@
   --surface-elevated: #FBFAF7;
   --muted: #EFEDE8;
   --muted-foreground: #5A5A58;
-  --accent: #3D5BFF;
+  --accent: #EB2828;
   --accent-foreground: #FFFFFF;
-  --accent-glow: rgba(61, 91, 255, 0.22);
+  --accent-glow: rgba(235, 40, 40, 0.22);
   --border: rgba(10, 10, 10, 0.10);
   --radius: 14px;
   --hairline-color: rgba(10, 10, 10, 0.10);
@@ -69,9 +69,9 @@
   --surface-elevated: #141414;
   --muted: #141414;
   --muted-foreground: #B0B0B0;
-  --accent: #5B7FFF;
-  --accent-foreground: #F5F5F5;
-  --accent-glow: rgba(91, 127, 255, 0.35);
+  --accent: #EB2828;
+  --accent-foreground: #FFFFFF;
+  --accent-glow: rgba(235, 40, 40, 0.38);
   --border: rgba(255, 255, 255, 0.08);
   --hairline-color: rgba(255, 255, 255, 0.08);
   --soft-surface: rgba(255, 255, 255, 0.03);
