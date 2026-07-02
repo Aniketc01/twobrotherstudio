@@ -49,7 +49,11 @@ export function Hero() {
                 transition={{ delay: 0.3 + i * 0.15, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
                 className="inline-block"
               >
-                {i === 1 ? <em className="font-light italic text-muted-foreground">{w}</em> : w}
+                {i === 1 ? (
+                  <em className="font-light italic text-accent">{w}</em>
+                ) : (
+                  w
+                )}
               </motion.span>
             </span>
           ))}
